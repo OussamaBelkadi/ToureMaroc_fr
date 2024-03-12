@@ -1,9 +1,8 @@
 package com.example.tourereservation.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+
+import jakarta.persistence.*;
+import com.example.tourereservation.Model.Region;
 import lombok.*;
 
 @Entity
@@ -14,5 +13,11 @@ public class Reservation {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String ville;
+    @Transient
+    private Region region;
     private int regionId;
+    private String Nom;
+    private String Date;
+
+
 }

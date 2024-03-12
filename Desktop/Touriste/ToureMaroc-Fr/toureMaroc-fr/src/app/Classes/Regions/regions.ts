@@ -3,4 +3,8 @@ export class Regions {
   public id: number
   // @ts-ignore
   public ville: string
+  // @ts-ignore
+  public type: string;
+  // @ts-ignore
+  public trajet: string;
 }

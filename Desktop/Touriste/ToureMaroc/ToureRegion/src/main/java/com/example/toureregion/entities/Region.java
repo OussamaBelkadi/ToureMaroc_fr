@@ -14,4 +14,6 @@ public class Region {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String ville;
+    private String type;
+    private String trajet;
 }
